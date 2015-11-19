@@ -1,10 +1,6 @@
 -- Simulation HW#1
 -- Wrote by Omid Yaghoubi 
 -- deopenmail@gmail.com
-<<<<<<< HEAD
-=======
--- Made with Codea
->>>>>>> cea1c0a701a1b3c1b84c642e7036bb7dadbd1bff
 
 -- Use this function to perform your initial setup
 function setup()
@@ -108,14 +104,9 @@ function draw()
         --res=tmpSum
         --==============
         -- Method 2 =============
-<<<<<<< HEAD
      -- delta= (limit.y-limit.x)/randCount
         delta=(xLimit-0)/randCount
         res=tmpSum*delta
-=======
-        mean=tmpSum/randCount
-        res=xLimit*mean
->>>>>>> cea1c0a701a1b3c1b84c642e7036bb7dadbd1bff
         -- ======================
         
         
@@ -165,16 +156,8 @@ function numericalIntegration(func,limit,countOfRectangles)
         -- ========================
         sum=sum+func(x)
     end
-<<<<<<< HEAD
     return sum*delta
     
 end --end nummerical Integration 
 
 
-=======
-    local mean=sum/countOfRectangles
-    return mean*(limit.y-limit.x)
-    
-end --end nummerical Integration 
-
->>>>>>> cea1c0a701a1b3c1b84c642e7036bb7dadbd1bff
